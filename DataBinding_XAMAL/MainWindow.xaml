@@ -11,7 +11,7 @@
                Margin="8,0"/>
         <TextBox x:Name="textoTexBox"
                  Margin="8,4"
-                 TextChanged="textoTexBox_TextChanged"/>
+                />
         <WrapPanel Orientation="Vertical"
                    Margin="10"/>
         <TextBlock Text="Texto escrito:"
@@ -20,7 +20,7 @@
                    FontStyle="Italic"
                    HorizontalAlignment="Center"
                    Margin="8"
-                   />
+                   Text="{Binding ElementName=textoTexBox, Path=Text}"/>
 
     </StackPanel>
     
