@@ -24,5 +24,10 @@ namespace DataBinding_XAMAL
         {
             InitializeComponent();
         }
+
+        private void textoTexBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoTexBlock.Text = textoTexBlock.Text;
+        }
     }
 }
